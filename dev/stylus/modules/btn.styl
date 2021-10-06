@@ -1,0 +1,80 @@
+/*!-----------------------------------------------------------------
+  .btn - модуль кнопки
+ -----------------------------------------------------------------*/
+.btn
+	cursor: pointer
+	border-radius $borderRadius
+	text-decoration none
+	display: inline-block
+	font-weight: normal
+	line-height: 1.25
+	text-align: center
+	white-space: nowrap
+	// vertical-align: middle
+	user-select: none
+	border: 1px solid transparent
+	padding: 0.38rem .8em
+	font-size: 1rem
+	transition: all 0.2s ease-in-out
+	color: #fff
+
+	&.t-disable
+	&[disabled]
+		opacity .65
+		cursor default
+
+	&:focus, &.t-focus
+		outline: 0
+		box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25)
+	&:focus, &:hover
+		text-decoration: none
+		color #fff
+
+	&.t-success
+		background-color: var(--bgColor)
+		&:hover
+			background-color: var(--bgColorHover)
+		&.is-disable:hover
+		&[disabled]:hover
+			background-color: var(--bgColor)
+	&.t-info
+		background-color: var(--bgColor)
+		&:hover
+			background-color: var(--bgColorHover)
+		&.is-disable:hover
+		&[disabled]:hover
+			background-color: var(--bgColor)
+	&.t-warning
+		background-color: var(--bgColor)
+		&:hover
+			background-color: var(--bgColorHover)
+		&.is-disable:hover
+		&[disabled]:hover
+			background-color: var(--bgColor)
+	&.t-danger
+		background-color: var(--bgColor)
+		&:hover
+			background-color: var(--bgColorHover)
+		&.is-disable:hover
+		&[disabled]:hover
+			background-color: var(--bgColor)
+	&.t-primary
+		background-color: var(--bgColor)
+		&:hover
+			background-color: var(--bgColorHover)
+		&.is-disable:hover
+		&[disabled]:hover
+			background-color: var(--bgColor)
+	&.t-secondary
+		border: 1px solid var(--borderColor)
+		color: var(--color)
+		background-color: var(--bgColor)
+		&:hover
+			background-color: var(--bgColorHover)
+		&.is-disable:hover
+		&[disabled]:hover
+			background-color: var(--bgColor)
+
+
+
+
