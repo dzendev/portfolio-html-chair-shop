@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- build:css-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild-->
+    <title>SMACSS</title>
+  </head>
+  <body>
+    <header id="l-header">
+      <div id="l-header-menu">
+        <div class="l-page-width">
+          <nav class="nav"><a class="nav__link" href="/example/">Главная</a><a class="nav__link" href="typography.html">Типографика</a><a class="nav__link" href="message.html">Сообщения</a><a class="nav__link" href="form.html">Формы</a><a class="nav__link" href="icon.html">Иконки</a><a class="nav__link" href="navigation.html">Навигация</a><a class="nav__link" href="slider.html">Слайдер</a>
+          </nav>
+          <!-- /nav.nav--><span class="hamburger fa fa-bars"></span>
+        </div>
+      </div>
+      <div id="l-header-title">
+        <div class="l-page-width"><a href="/"><img src="/img/jack-head.png" alt="smacss site"></a>
+          <div>
+            <h2>SMACSS — масштабируемая и модульная архитектура CSS</h2>
+            <p>Создание сайтов малых и средних размеров.</p>
+          </div>
+        </div>
+      </div>
+      <div id="l-header-breadcrumb">
+        <div class="l-page-width">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/example/">Главная</a></li>
+              <li><a href="form.html">Формы</a></li>
+              <li>Подтема</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- /header#l-header-->
+    <div id="l-content">
+      <div class="l-page-width">
+        <h2>Заголовки</h2>
+        <h1>Заголовок первого уровня <small>уменьшенный текст</small></h1>
+        <h2>Заголовок второго уровня <small>уменьшенный текст</small></h2>
+        <h3>Заголовок третьего уровня <small>уменьшенный текст</small></h3>
+        <h4>Заголовок четвёртого уровня <small>уменьшенный текст</small></h4>
+        <h5>Заголовок пятого уровня <small>уменьшенный текст</small></h5>
+        <h6>Заголовок шевтого уровня <small>уменьшенный текст</small></h6>
+        <h2>Абзацы</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore optio magnam, eos officiis dolores eius similique saepe unde beatae quis. Corrupti incidunt porro officiis repellat, autem facere amet esse ducimus et deleniti adipisci reprehenderit ea! Consectetur voluptatem quidem nihil ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fugiat porro tempore odio, molestias velit ab vitae necessitatibus accusamus rerum neque cum atque natus, nisi aspernatur placeat distinctio saepe delectus!</p><p>Станислав Лец утверждал: <q>Чаще всего выход там, где был вход</q>.</p>
+        <h2>Списки</h2>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            </ul>
+          </li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <ol>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.
+            <ol>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+              <li>Lorem ipsum dolor sit amet, consectetur.</li>
+            </ol>
+          </li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ol>
+        <h2>Таблица</h2>
+        <table><caption>Таблица размеров обуви</caption>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Название товара</th>
+              <th>Категория</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Шлёпки оранжевые</td>
+              <td>Обувь</td>
+              <td>900₽</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Швабра</td>
+              <td>Товары для дома</td>
+              <td>700₽</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Кастрюля</td>
+              <td>Посуда</td>
+              <td>1200₽</td>
+            </tr>
+            <tr></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>Всего</td>
+              <td>2800₽</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    <footer id="l-footer">
+      <div class="l-page-width">
+        <div><a class="socicons fa fa-vk" href="http://vk.com/modxrevolution"></a><a class="socicons fa fa-facebook" href="https://www.facebook.com/groups/modxrevolution/"></a><a class="socicons fa fa-twitter" href="http://twitter.com/@viktorminator"></a><a class="socicons fa fa-github" href="https://github.com/dzendev/smacss"></a><a class="socicons fa fa-skype" href="skype:viktorminator?chat&amp;topic=MODX уроки"></a></div>
+        <address><b>Twitter, Inc.<br></b>Francisco, CA 94103<br>
+          1355 Market Street, Suite 900<br><abbr title="Phone">P:</abbr>&nbsp;(123) 456-7890
+        </address>
+        <address><b>Full Name<br></b><a href="mailto:FullName@gmail.com">FullName@gmail.com</a>
+          <p role="contentinfo">Сайт сделан</p>
+        </address>
+      </div>
+    </footer>
+    <!-- /footer#l-footer--><a href="#l-header" id="l-top-scroll"><i class="fa fa-arrow-circle-up"></i></a>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <!-- build:js-->
+    <script src="/js/script.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>
