@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- build:css-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- endbuild-->
+    <title>SMACSS</title>
+  </head>
+  <body>
+    <header id="l-header">
+      <div id="l-header-menu">
+        <div class="l-page-width">
+          <nav class="nav"><a class="nav__link" href="/example/">Главная</a><a class="nav__link" href="typography.html">Типографика</a><a class="nav__link" href="message.html">Сообщения</a><a class="nav__link" href="form.html">Формы</a><a class="nav__link" href="icon.html">Иконки</a><a class="nav__link" href="navigation.html">Навигация</a><a class="nav__link" href="slider.html">Слайдер</a>
+          </nav>
+          <!-- /nav.nav--><span class="hamburger fa fa-bars"></span>
+        </div>
+      </div>
+      <div id="l-header-title">
+        <div class="l-page-width"><a href="/"><img src="/img/jack-head.png" alt="smacss site"></a>
+          <div>
+            <h2>SMACSS — масштабируемая и модульная архитектура CSS</h2>
+            <p>Создание сайтов малых и средних размеров.</p>
+          </div>
+        </div>
+      </div>
+      <div id="l-header-breadcrumb">
+        <div class="l-page-width">
+          <nav class="breadcrumb">
+            <ul>
+              <li><a href="/example/">Главная</a></li>
+              <li><a href="form.html">Формы</a></li>
+              <li>Подтема</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- /header#l-header-->
+    <div id="l-content">
+      <div class="l-page-width">
+        <h1>Слайдер</h1>
+        <section>
+          <div class="slider slider-banner">
+            <div class="slider-item"><img src="http://placeimg.com/1000/340/any/grayscale" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/1000/340/nature/sepia" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/1000/340/tech" alt=""></div>
+          </div>
+        </section>
+        <section>
+          <div class="slider slider-img">
+            <div class="slider-item"><img src="http://placeimg.com/200/100/nature" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/arch" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/animals" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/people" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/tech" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/animals/grayscale" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/arch/grayscale" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/nature/grayscale" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/tech/grayscale" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/animals/sepia" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/arch/sepia" alt=""></div>
+            <div class="slider-item"><img src="http://placeimg.com/200/100/nature/sepia" alt=""></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer id="l-footer">
+      <div class="l-page-width">
+        <div><a class="socicons fa fa-vk" href="http://vk.com/modxrevolution"></a><a class="socicons fa fa-facebook" href="https://www.facebook.com/groups/modxrevolution/"></a><a class="socicons fa fa-twitter" href="http://twitter.com/@viktorminator"></a><a class="socicons fa fa-github" href="https://github.com/dzendev/smacss"></a><a class="socicons fa fa-skype" href="skype:viktorminator?chat&amp;topic=MODX уроки"></a></div>
+        <address><b>Twitter, Inc.<br></b>Francisco, CA 94103<br>
+          1355 Market Street, Suite 900<br><abbr title="Phone">P:</abbr>&nbsp;(123) 456-7890
+        </address>
+        <address><b>Full Name<br></b><a href="mailto:FullName@gmail.com">FullName@gmail.com</a>
+          <p role="contentinfo">Сайт сделан</p>
+        </address>
+      </div>
+    </footer>
+    <!-- /footer#l-footer--><a href="#l-header" id="l-top-scroll"><i class="fa fa-arrow-circle-up"></i></a>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <!-- build:js-->
+    <script src="/js/script.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>
