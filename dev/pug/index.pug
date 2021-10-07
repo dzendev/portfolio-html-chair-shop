@@ -1,8 +1,140 @@
 extends layout.pug
 
 block title
-	title SMACSS
+	title Удобные стулья
 
 block content
-	p.b-text-center: img(src="img/book-covers.png", alt="Обложка книги по SMACSS")
-	h2.b-text-center <a href="/example/">Примеры</a>
+	section#l-home
+		h1 <span>Делать</span> вашу жизнь комфортней<br> — для нас это <span>счастье</span>
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Odio ipsa, suscipit quibusdam animi minima. Illo.
+		a.btn Перейти в магазин
+	// /section#l-home
+
+	section#l-shop
+		h2 Новые поступления
+		.box
+			.box__item
+				.box__img
+					img(src="/img/p1.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+			.box__item
+				.box__img
+					img(src="/img/p2.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+			.box__item
+				.box__img
+					img(src="/img/p3.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+			.box__item
+				.box__img
+					img(src="/img/p4.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+			.box__item
+				.box__img
+					img(src="/img/p5.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+			.box__item
+				.box__img
+					img(src="/img/p6.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+		a.btn Перейти в магазин
+	// /section#l-shop
+
+	section#l-new
+		h2 Новая коллекция
+		p Лучшие предложения
+		.box
+			.box__item
+				.box__img
+					img(src="/img/new1.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+			.box__item
+				.box__img
+					img(src="/img/new2.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+			.box__item
+				.box__img
+					img(src="/img/new3.jpg")
+				p.box__title Серый стул
+					span.box__stars
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star
+						i.bx.bxs-star-half
+				.box__price 3400₽ <i class="bx bx-cart"></i>
+
+	section#l-about
+		img(src="img/about.jpg").l-about-img
+		.l-about-info
+			h2 О компании
+			h3 Мебель важная часть для комфорта
+			p Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique amet, incidunt perferendis laborum officiis quo fugiat ipsum asperiores enim tenetur omnis commodi qui facilis et ut dicta ipsa expedita, totam nesciunt, exercitationem repellat numquam odio quae. Commodi iure ipsam eos.
+			p Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique amet, incidunt perferendis laborum officiis quo fugiat ipsum asperiores enim tenetur
+			a.btn Узнать больше
+
+	section#l-brands
+		h2 Наши партнёры
+		.l-brands-container
+			img(src="/img/Google.png" alt="")
+			img(src="/img/amazon.png" alt="")
+			img(src="/img/netflix.png" alt="")
+			img(src="/img/tesla.png" alt="")
+			img(src="/img/starbucks.png" alt="")
+			img(src="/img/zoom.png" alt="")

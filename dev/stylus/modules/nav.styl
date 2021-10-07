@@ -8,13 +8,15 @@
 	&__link
 		display block
 		text-decoration none
-		padding: 4px 10px
-		color #fff
+		margin-left: 40px
+		font-weight 500
+		color var(--text-color)
 		&:hover
-			color #fff
-		&.is-active
-			background-color #687179
-			color themeDefaultIsActiveColor
+			color var(--main-color)
+			text-decoration none
+		// &.is-active
+		// 	background-color #687179
+		// 	color themeDefaultIsActiveColor
 		+mema(sizeMedium)
 			display none
 	&.is-show

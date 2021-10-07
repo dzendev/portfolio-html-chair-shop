@@ -5,6 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "set NODE_ENV=development&&gulp",
+    "font": "set NODE_ENV=development&&gulp font",
+    "move": "set NODE_ENV=development&&gulp move",
     "build": "set NODE_ENV=production&&gulp build"
   },
   "repository": {
@@ -50,6 +52,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "boxicons": "^2.0.9",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",

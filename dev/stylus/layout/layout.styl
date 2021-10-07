@@ -2,6 +2,14 @@
 	layout.pug - базовый шаблон
  -----------------------------------------------------------------*/
 // прижатый футер к низу
+*
+*:before
+*:after
+	box-sizing border-box
+// прижатый футер к низу
+html
+	scroll-behavior: smooth
+	scroll-padding-top: 2rem
 html, body
 	height: 100%
 body
@@ -14,39 +22,66 @@ body
 // отступ в центре страницы и максимальная ширина
 .l-page-width
 	padding 0 15px
-	max-width: 960px
+	// max-width: 1120px
 	margin: 0 auto
 
 #l-header
-	background-color rgba(51, 153, 204, 0.5)
-	&-menu
-		background-color: rgba(10, 31, 41, 0.8)
-		.l-page-width
-			height 32px
-			+mema(sizeMedium)
-				display flex
-				align-items center
-				justify-content flex-end
-	&-title
-		padding 7px 0
-		.l-page-width
-			display flex
-			justify-content flex-start
-			align-items center
-		img
-			margin-right: 20px
-		h2
-			font-size: 1.7rem
-			margin: 0 0 5px 0
-		p
-			font-size 1.3rem
-			font-style: italic
-	&-breadcrumb
-		background-color: $colorGray
+	position fixed
+	top 0
+	right 0
+	width 100%
+	background: #edecea
+	display flex
+	align-items center
+	justify-content space-between
+	padding 18px 10%
+	> .l-logo
+		font-size 1.2rem
+		font-weight 600
+		color: var(--text-color)
+		text-decoration none
+		&:hover
+			color: var(--main-color)
+			span
+				color: var(--text-color)
+		> span
+			color: var(--main-color)
+	>.l-menu
+		font-size 2rem
+		cursor pointer
+		display none
 
 #l-content
-	padding: 20px 0
+	// padding: 20px 0
 	flex: 1
+	section#l-home
+		padding 50px 10%
+		min-height 100vh
+		background-image url('/img/background.jpg')
+		background-repeat no-repeat
+		background-size cover
+		background-position right
+		display flex
+		flex-direction column
+		justify-content center
+		h1
+			font-size 3rem
+			span
+				color var(--main-color)
+		> .btn
+			align-self start
+			margin-top 20px
+	section#l-shop
+		padding 50px 10%
+		text-align center
+		h2
+			color var(--main-color)
+		.btn
+			margin-top 20px
+
+	section#l-brands
+		img
+			width 100px
 
 #l-footer
 	background-color $colorGray

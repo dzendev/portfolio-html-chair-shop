@@ -1,0 +1,36 @@
+/*!-----------------------------------------------------------------
+	.box - модуль коробка
+ -----------------------------------------------------------------*/
+.box
+	display flex
+	flex-wrap wrap
+	&__item
+		box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.1)
+		border-radius: 44px 4px 4px 4px
+		width calc(100%/3 - 20px)
+		margin 10px
+	&__img
+		border-radius 44px 4px 0 0
+		height 400px
+		overflow hidden
+	&__title
+		padding 10px 15px 8px 15px
+		display flex
+		justify-content space-between
+	&__stars
+		color var(--main-color)
+	&__price
+		display flex
+		justify-content space-between
+		padding 0 0 0 15px
+		color var(--main-color)
+		line-height 2.6rem
+		font-size 1.2rem
+		.bx
+			color #FFF
+			background-color var(--main-color)
+			position relative
+			// top 10px
+			padding 10px
+			font-size 1.3rem
+			border-radius: 4px 0 4px 0

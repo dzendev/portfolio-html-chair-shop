@@ -14,32 +14,29 @@ html(lang="ru")
 		link(rel="stylesheet", href="/css/main.css")
 		// endbuild
 		block title
-			title SMACSS
+			title Удобные стулья
 
 		block top-script
 
 	body
 		header#l-header
-			#l-header-menu
-				.l-page-width
-					+nav(nav)
-					span.hamburger.fa.fa-bars
-			#l-header-title
-				.l-page-width
-					a(href="/")
-						img(src="/img/jack-head.png", alt="smacss site")
-					div
-						h2 SMACSS — масштабируемая и модульная архитектура CSS
-						p Создание сайтов малых и средних размеров.
+			a(href="/").l-logo Удобные <span>стулья</span>
+			i.bx.bx-menu.l-menu
+			nav.nav.l-nav
+				a(href="#home").nav__link Главная
+				a(href="#shop").nav__link Магазин
+				a(href="#new-arrival").nav__link Новые поступления
+				a(href="#about").nav__link О нас
+				a(href="#partners").nav__link Наши партнёры
+				a(href="#contact").nav__link Контакты
 		// /header#l-header
 
 		#l-content
-			.l-page-width
-				block content
+			block content
 		// /#l-content
 
 		footer#l-footer
-			.l-page-width.b-text-center(style="display:block") Copyright <a href="https://github.com/dzendev/smacss.git">Dzendev GitHub</a>
+			div Copyright <a href="https://github.com/dzendev/smacss.git">Dzendev GitHub</a>
 		// /footer#l-footer
 
 		block bottom-script

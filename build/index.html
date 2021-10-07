@@ -10,36 +10,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild-->
-    <title>SMACSS</title>
+    <title>Удобные стулья</title>
   </head>
   <body>
-    <header id="l-header">
-      <div id="l-header-menu">
-        <div class="l-page-width">
-          <nav class="nav"><a class="nav__link" href="/">Главная</a><a class="nav__link" href="404.html">404</a>
-          </nav>
-          <!-- /nav.nav--><span class="hamburger fa fa-bars"></span>
-        </div>
-      </div>
-      <div id="l-header-title">
-        <div class="l-page-width"><a href="/"><img src="/img/jack-head.png" alt="smacss site"></a>
-          <div>
-            <h2>SMACSS — масштабируемая и модульная архитектура CSS</h2>
-            <p>Создание сайтов малых и средних размеров.</p>
-          </div>
-        </div>
-      </div>
+    <header id="l-header"><a class="l-logo" href="/">Удобные <span>стулья</span></a><i class="bx bx-menu l-menu"></i>
+      <nav class="nav l-nav"><a class="nav__link" href="#home">Главная</a><a class="nav__link" href="#shop">Магазин</a><a class="nav__link" href="#new-arrival">Новые поступления</a><a class="nav__link" href="#about">О нас</a><a class="nav__link" href="#partners">Наши партнёры</a><a class="nav__link" href="#contact">Контакты</a></nav>
     </header>
     <!-- /header#l-header-->
     <div id="l-content">
-      <div class="l-page-width">
-        <p class="b-text-center"><img src="img/book-covers.png" alt="Обложка книги по SMACSS"></p>
-        <h2 class="b-text-center"><a href="/example/">Примеры</a></h2>
-      </div>
+      <section id="l-home">
+        <h1><span>Делать</span> вашу жизнь комфортней<br> — для нас это <span>счастье</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Odio ipsa, suscipit quibusdam animi minima. Illo.</p><a class="btn">Перейти в магазин</a>
+      </section>
+      <!-- /section#l-home-->
+      <section id="l-shop">
+        <h2>Новые поступления</h2>
+        <div class="box">
+          <div class="box__item">
+            <div class="box__img"><img src="/img/p1.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+          <div class="box__item">
+            <div class="box__img"><img src="/img/p2.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+          <div class="box__item">
+            <div class="box__img"><img src="/img/p3.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+          <div class="box__item">
+            <div class="box__img"><img src="/img/p4.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+          <div class="box__item">
+            <div class="box__img"><img src="/img/p5.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+          <div class="box__item">
+            <div class="box__img"><img src="/img/p6.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+        </div><a class="btn">Перейти в магазин</a>
+      </section>
+      <!-- /section#l-shop-->
+      <section id="l-new">
+        <h2>Новая коллекция</h2>
+        <p>Лучшие предложения</p>
+        <div class="box">
+          <div class="box__item">
+            <div class="box__img"><img src="/img/new1.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+          <div class="box__item">
+            <div class="box__img"><img src="/img/new2.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+          <div class="box__item">
+            <div class="box__img"><img src="/img/new3.jpg"></div>
+            <p class="box__title">Серый стул<span class="box__stars"><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star"></i><i class="bx bxs-star-half"></i></span></p>
+            <div class="box__price">3400₽ <i class="bx bx-cart"></i></div>
+          </div>
+        </div>
+      </section>
+      <section id="l-about"><img class="l-about-img" src="img/about.jpg">
+        <div class="l-about-info">
+          <h2>О компании</h2>
+          <h3>Мебель важная часть для комфорта</h3>
+          <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique amet, incidunt perferendis laborum officiis quo fugiat ipsum asperiores enim tenetur omnis commodi qui facilis et ut dicta ipsa expedita, totam nesciunt, exercitationem repellat numquam odio quae. Commodi iure ipsam eos.</p>
+          <p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique amet, incidunt perferendis laborum officiis quo fugiat ipsum asperiores enim tenetur</p><a class="btn">Узнать больше</a>
+        </div>
+      </section>
+      <section id="l-brands">
+        <h2>Наши партнёры</h2>
+        <div class="l-brands-container"><img src="/img/Google.png" alt=""><img src="/img/amazon.png" alt=""><img src="/img/netflix.png" alt=""><img src="/img/tesla.png" alt=""><img src="/img/starbucks.png" alt=""><img src="/img/zoom.png" alt=""></div>
+      </section>
     </div>
     <!-- /#l-content-->
     <footer id="l-footer">
-      <div class="l-page-width b-text-center" style="display:block">Copyright <a href="https://github.com/dzendev/smacss.git">Dzendev GitHub</a></div>
+      <div>Copyright <a href="https://github.com/dzendev/smacss.git">Dzendev GitHub</a></div>
     </footer>
     <!-- /footer#l-footer-->
     <script src="/js/jquery.min.js"></script>

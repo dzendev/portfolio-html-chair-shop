@@ -42,8 +42,9 @@ function clear() {
 function moveFont() {
 	return gulp.src([
 			'dev/lib/fonts/*',
-			'./node_modules/font-awesome/fonts/*',
-			'./node_modules/slick-carousel/slick/fonts/*'
+			'node_modules/font-awesome/fonts/*',
+			'node_modules/boxicons/fonts/*',
+			'node_modules/slick-carousel/slick/fonts/*'
 		])
 		.pipe(newer('build/fonts'))
 		.pipe(gulp.dest('build/fonts'));
