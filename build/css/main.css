@@ -469,7 +469,7 @@ template {
   --colorWhite: #fff;
   --colorBlack: #000;
   --colorGray: #e3e6e8;
-  --borderRadius: 0.25rem;
+  --border-radius: 4px;
   --text-color: #000;
   --main-color: #83b735;
 }
@@ -817,6 +817,15 @@ body {
 #l-footer .l-footer-box {
   width: calc(100% / 4 - 3%);
 }
+#l-footer .l-footer-box > h3 {
+  font-size: 1.375rem;
+  padding: 0;
+  margin: 0;
+}
+#l-footer .l-footer-box > p,
+#l-footer .l-footer-box > address {
+  margin-top: 16px;
+}
 #l-footer .l-footer-box .l-social {
   font-size: 24px;
 }
@@ -873,8 +882,16 @@ section#l-shop {
   padding-bottom: 50px;
   text-align: center;
 }
-section#l-shop h2 {
+section#l-shop > h2 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: 0;
+}
+section#l-shop > p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.6em 0;
 }
 section#l-shop .btn {
   margin-top: 20px;
@@ -884,6 +901,18 @@ section#l-new {
   padding-right: 10%;
   padding-top: 50px;
   padding-bottom: 50px;
+  text-align: center;
+}
+section#l-new > h2 {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 0;
+}
+section#l-new > p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.6em 0;
 }
 section#l-about {
   padding-left: 10%;
@@ -910,7 +939,7 @@ section#l-about .l-about-info h2 {
   margin-bottom: 0.6em;
 }
 section#l-about .l-about-info h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 0 0 0.6em 0;
   line-height: 1.1em;
@@ -932,7 +961,7 @@ section#l-partners h2 {
   margin-bottom: 0;
 }
 section#l-partners p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 0 0 1em 0;
 }
@@ -966,6 +995,7 @@ section#l-subscribe h2 {
   color: #fff;
   padding-bottom: 1.3em;
   margin: 0;
+  font-size: 1.5rem;
 }
 section#l-subscribe .l-group-form {
   display: flex;
@@ -1454,19 +1484,30 @@ fieldset[disabled] .form__control,
 }
 .box__item {
   box-shadow: 1px 4px 4px rgba(0,0,0,0.1);
-  border-radius: 44px 4px 4px 4px;
+  border-radius: var(--border-radius);
   width: calc(100% / 3 - 20px);
   margin: 10px;
 }
 .box__img {
-  border-radius: 44px 4px 0 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   height: 400px;
   overflow: hidden;
+}
+.box__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.box__img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .box__title {
   padding: 10px 15px 8px 15px;
   display: flex;
   justify-content: space-between;
+  font-weight: 600;
 }
 .box__stars {
   color: var(--main-color);
@@ -1485,7 +1526,7 @@ fieldset[disabled] .form__control,
   position: relative;
   padding: 10px;
   font-size: 1.3rem;
-  border-radius: 4px 0 4px 0;
+  border-radius: 0 0 var(--border-radius) 0;
 }
 /*-----------------------------------------------------------------
 	.switch - модуль кастомных checkbox и radio
