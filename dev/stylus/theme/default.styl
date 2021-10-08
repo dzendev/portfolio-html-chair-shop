@@ -59,7 +59,7 @@ $borderRadius = .25em
 html
 	font-size 16px
 body
-	font-family: 'Roboto'\, sans-serif
+	font-family: 'Poppins'\, sans-serif
 	color #000
 	line-height: 1.5em
 h1, h2, h3, h4, h5, h6
@@ -82,7 +82,7 @@ small
 p
 	font-size 1rem
 	margin 0 0 10px
-	line-height 1.428
+	line-height 1.5em
 ul
 	font-size 1rem
 	padding-left: $pl = 30px
@@ -98,13 +98,14 @@ ol
 			counter-increment: item
 			position: relative
 			left: -5px
+li
+	padding-bottom .2em
 abbr[title]
-	font-size 0.875rem
+	font-size 1rem
 	cursor help
-	border-bottom 1px dotted #777
 	text-decoration none
 address
-	font-size 0.875rem
+	font-size 1rem
 	font-style normal
 // html[lang="ru"] q
 // 	quotes: '«' '»'
@@ -112,14 +113,11 @@ address
 	Ссылки
  -----------------------------------------------------------------*/
 a
-	color #337ab7
+	color var(--text-color)
 	text-decoration none
 	&:focus
-		color darken(@color, 35%)
-		text-decoration: underline
 	&:hover
-		color darken(@color, 35%)
-		text-decoration: underline
+		color var(--main-color)
 /*!-----------------------------------------------------------------
 	Таблицы
  -----------------------------------------------------------------*/

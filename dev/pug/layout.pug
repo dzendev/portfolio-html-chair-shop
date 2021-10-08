@@ -23,12 +23,12 @@ html(lang="ru")
 			a(href="/").l-logo Удобные <span>стулья</span>
 			i.bx.bx-menu.l-menu
 			nav.nav.l-nav
-				a(href="#home").nav__link Главная
-				a(href="#shop").nav__link Магазин
-				a(href="#new-arrival").nav__link Новые поступления
-				a(href="#about").nav__link О нас
-				a(href="#partners").nav__link Наши партнёры
-				a(href="#contact").nav__link Контакты
+				a(href="#l-home").nav__link Главная
+				a(href="#l-shop").nav__link Магазин
+				a(href="#l-new").nav__link Новые поступления
+				a(href="#l-about").nav__link О нас
+				a(href="#l-partners").nav__link Партнёры
+				a(href="#l-subscribe").nav__link Контакты
 		// /header#l-header
 
 		#l-content
@@ -36,12 +36,40 @@ html(lang="ru")
 		// /#l-content
 
 		footer#l-footer
-			div Copyright <a href="https://github.com/dzendev/smacss.git">Dzendev GitHub</a>
+			.l-footer-box
+				h3 Удобные <span>стулья</span>
+				p Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Esse est iste enim officia ipsam nemo vitae.
+				.l-social
+					a(href="#"): i.bx.bxl-facebook
+					a(href="#"): i.bx.bxl-twitter
+					a(href="#"): i.bx.bxl-instagram
+				</div>
+			.l-footer-box
+				h3 Услуги
+				ul.navigat
+					li.navigat__item: a(href="#") Продукция
+					li.navigat__item: a(href="#") Помощь и поддержка
+					li.navigat__item: a(href="#") Ценообразование
+					li.navigat__item: a(href="#") Часто задаваемые вопросы
+			.l-footer-box
+				h3 Продукция
+				ul.navigat
+					li.navigat__item: a(href="#") Диваны
+					li.navigat__item: a(href="#") Стулья
+					li.navigat__item: a(href="#") Мебель для гостинной
+					li.navigat__item: a(href="#") Офисная мебель
+			.l-footer-box
+				h3 Контакты
+				address
+					| Россия, Белгородская область<br>
+					| г. Белгород, ул.&nbsp;Карла&nbsp;Маркса,&nbsp;4<br>
+					abbr(title="Phone") (4722) 34-56-78
+					br
+					a(href="mailto:udobnostul@gmail.com") udobnostul@gmail.com
+			.l-copyright © Copyright
 		// /footer#l-footer
 
 		block bottom-script
-			script(src="/js/jquery.min.js")
-			script(src="/js/slick.min.js")
 			// build:js
 			script(src="/js/script.js")
 			// endbuild

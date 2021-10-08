@@ -121,16 +121,18 @@ block content
 				.box__price 3400₽ <i class="bx bx-cart"></i>
 
 	section#l-about
-		img(src="img/about.jpg").l-about-img
+		.l-about-img
+			img(src="img/about.jpg")
 		.l-about-info
 			h2 О компании
 			h3 Мебель важная часть для комфорта
-			p Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique amet, incidunt perferendis laborum officiis quo fugiat ipsum asperiores enim tenetur omnis commodi qui facilis et ut dicta ipsa expedita, totam nesciunt, exercitationem repellat numquam odio quae. Commodi iure ipsam eos.
+			p Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique amet, incidunt perferendis laborum officiis quo fugiat ipsum asperiores enim tenetur omnis commodi qui facilis et ut dicta ipsa expedita, totam nesciunt.
 			p Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Similique amet, incidunt perferendis laborum officiis quo fugiat ipsum asperiores enim tenetur
 			a.btn Узнать больше
 
-	section#l-brands
-		h2 Наши партнёры
+	section#l-partners
+		h2 Бренды
+		p Наши партнёры
 		.l-brands-container
 			img(src="/img/Google.png" alt="")
 			img(src="/img/amazon.png" alt="")
@@ -138,3 +140,13 @@ block content
 			img(src="/img/tesla.png" alt="")
 			img(src="/img/starbucks.png" alt="")
 			img(src="/img/zoom.png" alt="")
+
+	section#l-subscribe
+		h2 Подписывайся на новостную рассылку
+		form.form
+			.l-group-form
+				input(type="text" placeholder="Введите ваш email").form__control
+				button(type="submit").btn ПОДПИСАТЬСЯ
+
+
+

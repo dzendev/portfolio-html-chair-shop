@@ -25,8 +25,20 @@ body
 	// max-width: 1120px
 	margin: 0 auto
 
+$paddingPage = {
+	padding-left: 10%,
+	padding-right: 10%
+}
+$paddingTopSection = {
+	padding-top: 50px
+}
+$paddingBottomSection = {
+	padding-bottom: 50px
+}
+
 #l-header
 	position fixed
+	z-index 1000
 	top 0
 	right 0
 	width 100%
@@ -34,7 +46,9 @@ body
 	display flex
 	align-items center
 	justify-content space-between
-	padding 18px 10%
+	padding-top 18px
+	padding-bottom 18px
+	{$paddingPage}
 	> .l-logo
 		font-size 1.2rem
 		font-weight 600
@@ -52,54 +66,26 @@ body
 		display none
 
 #l-content
-	// padding: 20px 0
 	flex: 1
-	section#l-home
-		padding 50px 10%
-		min-height 100vh
-		background-image url('/img/background.jpg')
-		background-repeat no-repeat
-		background-size cover
-		background-position right
-		display flex
-		flex-direction column
-		justify-content center
-		h1
-			font-size 3rem
-			span
-				color var(--main-color)
-		> .btn
-			align-self start
-			margin-top 20px
-	section#l-shop
-		padding 50px 10%
-		text-align center
-		h2
-			color var(--main-color)
-		.btn
-			margin-top 20px
-
-	section#l-brands
-		img
-			width 100px
 
 #l-footer
-	background-color $colorGray
-	.l-page-width
-		padding-top:15px
-		padding-bottom 15px
-		display flex
-		justify-content space-between
-
-// стрелка наверх
-#l-top-scroll
-	height 50px
-	width 50px
-	position fixed
-	bottom 50px
-	right 50px
-	background #000
-	color #fff
-	font-size: 40px
-	text-align center
-	line-height: 51px
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	{$paddingPage}
+	{$paddingTopSection}
+	.l-footer-box
+		width calc(100%/4 - 3%)
+		.l-social
+			font-size 24px
+			.bx
+				margin-right 10px
+		> ul
+			padding-left 0
+			> li
+				list-style: none
+	.l-copyright
+		width 100%
+		text-align center
+		{$paddingTopSection}
+		padding-bottom 20px

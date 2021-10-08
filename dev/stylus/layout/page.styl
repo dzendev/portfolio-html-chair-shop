@@ -4,41 +4,128 @@
 /*!-----------------------------------------------------------------
 	index.pug
  -----------------------------------------------------------------*/
-/*!-----------------------------------------------------------------
-	form.pug
- -----------------------------------------------------------------*/
-.l-btn-group
+section#l-home
+	{$paddingPage}
+	{$paddingTopSection}
+	{$paddingBottomSection}
+	min-height 100vh
+	background-image url('/img/background.jpg')
+	background-repeat no-repeat
+	background-size cover
+	background-position right
+	background-attachment fixed
 	display flex
-	width 100%
+	flex-direction column
+	justify-content center
+	> h1
+		font-size 3rem
+		span
+			color var(--main-color)
 	> .btn
-		border-radius: 0
-		&:first-child
-			border-top-left-radius $borderRadius
-			border-bottom-left-radius $borderRadius
-		&:last-child
-			border-top-right-radius $borderRadius
-			border-bottom-right-radius $borderRadius
-	&.is-inline > .btn
-		flex 1 1 auto
-	+mema(sizeSmall)
-		flex-direction column
-		> .btn
-			&:first-child
-				border-top-left-radius $borderRadius
-				border-top-right-radius $borderRadius
-				border-bottom-left-radius 0
-			&:last-child
-				border-top-right-radius 0
-				border-bottom-left-radius $borderRadius
-				border-bottom-right-radius $borderRadius
-.l-inline-switch
+		align-self start
+		margin-top 20px
+
+section#l-shop
+	{$paddingPage}
+	{$paddingTopSection}
+	{$paddingBottomSection}
+	text-align center
+	h2
+		color var(--main-color)
+	.btn
+		margin-top 20px
+
+section#l-new
+	{$paddingPage}
+	{$paddingTopSection}
+	{$paddingBottomSection}
+
+section#l-about
+	{$paddingPage}
+	{$paddingTopSection}
+	{$paddingBottomSection}
 	display flex
-	> .switch
-		margin 0 10px 0 0
+	.l-about-img
+		width 45%
+		padding-right 5%
+		img
+			border-radius 10px
+			object-fit contain
+	.l-about-info
+		width 50%
+		h2
+			font-size: 0.875rem
+			text-transform: uppercase
+			color: var(--main-color)
+			margin-bottom .6em
+		h3
+			font-size 1.8rem
+			font-weight 700
+			margin 0 0 .6em 0
+			line-height 1.1em
+		.btn
+			margin-top .6em
+
+section#l-partners
+	{$paddingPage}
+	{$paddingTopSection}
+	{$paddingBottomSection}
+	text-align center
+	h2
+		font-size: 0.875rem
+		text-transform: uppercase
+		color: var(--main-color)
+		margin-bottom 0
+	p
+		font-size 1.8rem
+		font-weight 700
+		margin 0 0 1em 0
+	.l-brands-container
+		display flex
+		align-items center
+		justify-content space-between
+		img
+			width 100px
+			filter: grayscale(1)
+			&:hover
+				filter: grayscale(0)
+
+section#l-subscribe
+	{$paddingPage}
+	{$paddingTopSection}
+	{$paddingBottomSection}
+	display flex
+	justify-content center
+	align-items center
+	flex-direction column
+	background url('/img/bg.jpg')
+	background-repeat: no-repeat
+	background-size cover
+	background-position center
+	h2
+		color #fff
+		padding-bottom 1.3em
+		margin 0
+	.l-group-form
+		display flex
+		align-items stretch
+		> .form__control
+		> .btn
+			border 0
+			border-radius: 0
 
 /*!-----------------------------------------------------------------
 	404.pug
  -----------------------------------------------------------------*/
 .l-page-404
-	font-size: 3.5rem
-	font-weight: 600
+	display flex
+	justify-content center
+	align-items center
+	flex-direction column
+	height 100%
+	h1
+		font-size: 6rem
+		span
+			color var(--main-color)
+	a
+		text-decoration underline
