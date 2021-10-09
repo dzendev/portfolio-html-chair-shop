@@ -461,10 +461,6 @@ template {
  * Theme
  *+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
-/*-----------------------------------------------------------------
-	Подключение локальных шрифтов шрифтов
- -----------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 :root {
   --colorWhite: #fff;
   --colorBlack: #000;
@@ -764,10 +760,6 @@ body {
   min-height: -webkit-fill-available;
   flex-direction: column;
 }
-.l-page-width {
-  padding: 0 15px;
-  margin: 0 auto;
-}
 #l-header {
   position: fixed;
   z-index: 1000;
@@ -782,6 +774,12 @@ body {
   padding-bottom: 18px;
   padding-left: 10%;
   padding-right: 10%;
+}
+@media screen and (max-width: 991px) {
+  #l-header {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 #l-header > .l-logo {
   font-size: 1.2rem;
@@ -798,7 +796,7 @@ body {
 #l-header > .l-logo > span {
   color: var(--main-color);
 }
-#l-header >.l-menu {
+#l-header > .l-menu {
   font-size: 2rem;
   cursor: pointer;
   display: none;
@@ -810,9 +808,15 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 50px;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 50px;
+}
+@media screen and (max-width: 991px) {
+  #l-footer {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 #l-footer .l-footer-box {
   width: calc(100% / 4 - 3%);
@@ -821,6 +825,9 @@ body {
   font-size: 1.375rem;
   padding: 0;
   margin: 0;
+}
+#l-footer .l-footer-box > h3 span {
+  color: var(--main-color);
 }
 #l-footer .l-footer-box > p,
 #l-footer .l-footer-box > address {
@@ -851,10 +858,6 @@ body {
 	index.pug
  -----------------------------------------------------------------*/
 section#l-home {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 50px;
-  padding-bottom: 50px;
   min-height: 100vh;
   background-image: url("/img/background.jpg");
   background-repeat: no-repeat;
@@ -864,9 +867,24 @@ section#l-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 991px) {
+  section#l-home {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 section#l-home > h1 {
   font-size: 3rem;
+}
+@media screen and (max-width: 800px) {
+  section#l-home > h1 {
+    font-size: 2rem;
+  }
 }
 section#l-home > h1 span {
   color: var(--main-color);
@@ -876,11 +894,17 @@ section#l-home > .btn {
   margin-top: 20px;
 }
 section#l-shop {
-  padding-left: 10%;
-  padding-right: 10%;
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 991px) {
+  section#l-shop {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 section#l-shop > h2 {
   font-size: 0.875rem;
@@ -897,11 +921,17 @@ section#l-shop .btn {
   margin-top: 20px;
 }
 section#l-new {
-  padding-left: 10%;
-  padding-right: 10%;
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 991px) {
+  section#l-new {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 section#l-new > h2 {
   font-size: 0.875rem;
@@ -915,11 +945,17 @@ section#l-new > p {
   margin: 0 0 0.6em 0;
 }
 section#l-about {
-  padding-left: 10%;
-  padding-right: 10%;
+  display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
-  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 991px) {
+  section#l-about {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 section#l-about .l-about-img {
   width: 45%;
@@ -948,11 +984,17 @@ section#l-about .l-about-info .btn {
   margin-top: 0.6em;
 }
 section#l-partners {
-  padding-left: 10%;
-  padding-right: 10%;
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media screen and (max-width: 991px) {
+  section#l-partners {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 section#l-partners h2 {
   font-size: 0.875rem;
@@ -978,10 +1020,10 @@ section#l-partners .l-brands-container img:hover {
   filter: grayscale(0);
 }
 section#l-subscribe {
-  padding-left: 10%;
-  padding-right: 10%;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -990,6 +1032,12 @@ section#l-subscribe {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media screen and (max-width: 991px) {
+  section#l-subscribe {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
 }
 section#l-subscribe h2 {
   color: #fff;
@@ -1050,6 +1098,11 @@ section#l-subscribe .l-group-form > .btn {
   margin-left: 40px;
   font-weight: 600;
   color: var(--text-color);
+}
+@media screen and (max-width: 1170px) {
+  .nav__link {
+    margin-left: 25px;
+  }
 }
 .nav__link:hover {
   color: var(--main-color);

@@ -29,7 +29,7 @@ const env              = process.env.NODE_ENV;
 // stylus -> mixin imageSet, @media
 const breakpoint = {
 	sizeSmall: "480px",
-	sizeMedium: "800px",
+	sizeMedium: "881px",
 	sizeLarge: "991px",
 	sizeExtraLarge: "1170px",
 	sizeHD: "1440px"

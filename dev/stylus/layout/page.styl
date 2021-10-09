@@ -5,9 +5,6 @@
 	index.pug
  -----------------------------------------------------------------*/
 section#l-home
-	{$paddingPage}
-	{$paddingTopSection}
-	{$paddingBottomSection}
 	min-height 100vh
 	background-image url('/img/background.jpg')
 	background-repeat no-repeat
@@ -17,8 +14,15 @@ section#l-home
 	display flex
 	flex-direction column
 	justify-content center
+	{$paddingTopSection}
+	{$paddingBottomSection}
+	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	> h1
 		font-size 3rem
+		+mema(sizeMedium)
+			font-size 2rem
 		span
 			color var(--main-color)
 	> .btn
@@ -26,10 +30,12 @@ section#l-home
 		margin-top 20px
 
 section#l-shop
-	{$paddingPage}
+	text-align center
 	{$paddingTopSection}
 	{$paddingBottomSection}
-	text-align center
+	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	> h2
 		font-size: 0.875rem
 		text-transform: uppercase
@@ -43,10 +49,12 @@ section#l-shop
 		margin-top 20px
 
 section#l-new
-	{$paddingPage}
+	text-align center
 	{$paddingTopSection}
 	{$paddingBottomSection}
-	text-align center
+	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	> h2
 		font-size: 0.875rem
 		text-transform: uppercase
@@ -58,10 +66,12 @@ section#l-new
 		margin 0 0 .6em 0
 
 section#l-about
-	{$paddingPage}
+	display flex
 	{$paddingTopSection}
 	{$paddingBottomSection}
-	display flex
+	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	.l-about-img
 		width 45%
 		padding-right 5%
@@ -84,10 +94,12 @@ section#l-about
 			margin-top .6em
 
 section#l-partners
-	{$paddingPage}
+	text-align center
 	{$paddingTopSection}
 	{$paddingBottomSection}
-	text-align center
+	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	h2
 		font-size: 0.875rem
 		text-transform: uppercase
@@ -108,9 +120,11 @@ section#l-partners
 				filter: grayscale(0)
 
 section#l-subscribe
-	{$paddingPage}
 	{$paddingTopSection}
 	{$paddingBottomSection}
+	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	display flex
 	justify-content center
 	align-items center

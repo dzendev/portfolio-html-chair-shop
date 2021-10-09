@@ -19,15 +19,13 @@ body
 	min-height: -webkit-fill-available
 	flex-direction: column
 
-// отступ в центре страницы и максимальная ширина
-.l-page-width
-	padding 0 15px
-	// max-width: 1120px
-	margin: 0 auto
-
 $paddingPage = {
 	padding-left: 10%,
 	padding-right: 10%
+}
+$paddingPageLarge = {
+	padding-left: 4%,
+	padding-right: 4%
 }
 $paddingTopSection = {
 	padding-top: 50px
@@ -49,6 +47,8 @@ $paddingBottomSection = {
 	padding-top 18px
 	padding-bottom 18px
 	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	> .l-logo
 		font-size 1.2rem
 		font-weight 600
@@ -60,7 +60,7 @@ $paddingBottomSection = {
 				color: var(--text-color)
 		> span
 			color: var(--main-color)
-	>.l-menu
+	> .l-menu
 		font-size 2rem
 		cursor pointer
 		display none
@@ -72,14 +72,18 @@ $paddingBottomSection = {
 	display flex
 	justify-content space-between
 	flex-wrap wrap
-	{$paddingPage}
 	{$paddingTopSection}
+	{$paddingPage}
+	+mema(sizeLarge)
+		{$paddingPageLarge}
 	.l-footer-box
 		width calc(100%/4 - 3%)
 		> h3
 			font-size 1.375rem
 			padding 0
 			margin 0
+			span
+				color var(--main-color)
 		> p
 		> address
 			margin-top 16px
