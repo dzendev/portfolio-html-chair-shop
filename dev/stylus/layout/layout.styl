@@ -49,6 +49,9 @@ $paddingBottomSection = {
 	{$paddingPage}
 	+mema(sizeLarge)
 		{$paddingPageLarge}
+	+mema(sizeSmall)
+		padding-top 10px
+		padding-bottom 10px
 	> .l-logo
 		font-size 1.2rem
 		font-weight 600
@@ -64,6 +67,8 @@ $paddingBottomSection = {
 		font-size 2rem
 		cursor pointer
 		display none
+		+mema(sizeMedium)
+			display block
 
 #l-content
 	flex: 1
@@ -78,6 +83,10 @@ $paddingBottomSection = {
 		{$paddingPageLarge}
 	.l-footer-box
 		width calc(100%/4 - 3%)
+		+mema(sizeMedium)
+			width calc(100%/2 - 2%)
+		+mema(sizeSmall)
+			width 100%
 		> h3
 			font-size 1.375rem
 			padding 0
@@ -89,6 +98,8 @@ $paddingBottomSection = {
 			margin-top 16px
 		.l-social
 			font-size 24px
+			+mema(sizeSmall)
+				padding-bottom .5em
 			.bx
 				margin-right 10px
 		> ul
