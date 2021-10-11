@@ -7,46 +7,60 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- build:css-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="css/main.css">
     <!-- endbuild-->
-    <title>SMACSS</title>
+    <title>Удобные стулья</title>
   </head>
   <body>
-    <header id="l-header">
-      <div id="l-header-menu">
-        <div class="l-page-width">
-          <nav class="nav"><a class="nav__link" href="/">Главная</a><a class="nav__link" href="404.html">404</a>
-          </nav>
-          <!-- /nav.nav--><span class="hamburger fa fa-bars"></span>
-        </div>
-      </div>
-      <div id="l-header-title">
-        <div class="l-page-width"><a href="/"><img src="/img/jack-head.png" alt="smacss site"></a>
-          <div>
-            <h2>SMACSS — масштабируемая и модульная архитектура CSS</h2>
-            <p>Создание сайтов малых и средних размеров.</p>
-          </div>
-        </div>
-      </div>
+    <header id="l-header"><a class="l-logo" href="/">Удобные <span>стулья</span></a><i class="bx bx-menu menu l-menu"></i>
+      <nav class="nav l-nav"><a class="nav__link" href="#l-home">Главная</a><a class="nav__link" href="#l-shop">Магазин</a><a class="nav__link" href="#l-new">Новые поступления</a><a class="nav__link" href="#l-about">О нас</a><a class="nav__link" href="#l-partners">Партнёры</a><a class="nav__link" href="#l-subscribe">Контакты</a></nav>
     </header>
     <!-- /header#l-header-->
     <div id="l-content">
-      <div class="l-page-width">
-        <h1 class="b-text-center">Ошибка <span class="page-404">404</span></h1>
-        <p class="b-text-center">Вы ищете страницу, которая не существует.</p>
-        <p class="b-text-center">Перейти на <a href="/">главную страницу</a>.</p>
+      <div class="l-page-404">
+        <h1>Ошибка <span>404</span></h1>
+        <p>Вы ищете страницу, которая не существует.</p>
+        <p>Перейти на <a href="/">главную страницу</a>.</p>
       </div>
     </div>
     <!-- /#l-content-->
     <footer id="l-footer">
-      <div class="l-page-width b-text-center" style="display:block">Copyright <a href="https://github.com/dzendev/smacss.git">Dzendev GitHub</a></div>
+      <div class="l-footer-box">
+        <h3>Удобные <span>стулья</span></h3>
+        <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Esse est iste enim officia ipsam nemo vitae.</p>
+        <div class="l-social"><a href="#"><i class="bx bxl-facebook"></i></a><a href="#"><i class="bx bxl-twitter"></i></a><a href="#"><i class="bx bxl-instagram"></i></a></div></div>
+      </div>
+      <div class="l-footer-box">
+        <h3>Услуги</h3>
+        <ul>
+          <li><a href="#">Продукция</a></li>
+          <li><a href="#">Помощь и поддержка</a></li>
+          <li><a href="#">Ценообразование</a></li>
+          <li><a href="#">Часто задаваемые вопросы</a></li>
+        </ul>
+      </div>
+      <div class="l-footer-box">
+        <h3>Продукция</h3>
+        <ul>
+          <li><a href="#">Диваны</a></li>
+          <li><a href="#">Стулья</a></li>
+          <li><a href="#">Мебель для гостинной</a></li>
+          <li><a href="#">Офисная мебель</a></li>
+        </ul>
+      </div>
+      <div class="l-footer-box">
+        <h3>Контакты</h3>
+        <address>
+          Россия, Белгородская область<br>
+          г. Белгород, ул.&nbsp;Карла&nbsp;Маркса,&nbsp;4<br><abbr title="Phone">(4722) 34-56-78</abbr><br><a href="mailto:udobnostul@gmail.com">udobnostul@gmail.com</a>
+        </address>
+      </div>
+      <div class="l-copyright">© Copyright</div>
     </footer>
     <!-- /footer#l-footer-->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/slick.min.js"></script>
     <!-- build:js-->
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
     <!-- endbuild-->
   </body>
 </html>
